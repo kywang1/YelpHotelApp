@@ -7,17 +7,17 @@ routing routies
 
 ## Routes
 HOTEL ROUTES
-
+```
 INDEX   /hotels
 NEW     /hotels/new
 CREATE  /hotels
 SHOW    /hotel/:id
-
+```
 Comment ROUTES
-
+```
 NEW     hotels/:id/comments/new     GET
 CREATE  hotels/:id/comments         POST
-
-###10-10-2017
+```
+### 10-10-2017
 Planning to add user authenticaiton and expand data base of application
     
