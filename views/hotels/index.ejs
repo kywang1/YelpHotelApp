@@ -1,0 +1,30 @@
+<% include ../partials/header%>
+    <div class = "container">
+        <header class = "jumbotron">
+            <div class = "container">
+                <h1>Welcome to Yelp Hotel</h1>
+                <p1>View our hand-picked Hotels From All Over the World</p1>
+                <p>
+                    <a class = "btn btn-primary btn-large" href = "/hotels/new">Add New Hotel</a>
+                </p>
+            </div>
+        </header>
+        
+        <div class = "row text-center" style = "display:flex; flex-wrap:wrap">
+            <%  allhotels.forEach(function(hotel){ %>
+                <div class = "col-md-3 col-sm-6">
+                    <div class = "thumbnail">
+                        <img src = "<%=hotel.image%>">
+                        <div class = "caption">
+                            <h4><%= hotel.name %></h4>
+                            <h7><%= hotel.location%></h3>
+                        </div>
+                        <p>
+                            <a href = "/hotels/<%= hotel._id %>" class = "btn btn-primary">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            <%  });%>
+        </div>
+    </div>
+<% include ../partials/footer %>

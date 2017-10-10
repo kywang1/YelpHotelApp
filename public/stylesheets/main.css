@@ -1,0 +1,26 @@
+body {
+    background:#cceeff;
+}
+
+#landing{
+    width: 1200px;
+    height:600px;
+    background-image: url('https://www.scienceabc.com/wp-content/uploads/2017/02/Thailand-beach-sand.jpg');
+    background-position:center center;
+    background-repeat: no-repeat;
+    text-align:center;
+    margin:auto;
+    padding:0;
+}
+
+.thumbnail img{
+    width:100%;
+}
+
+.thumbnail{
+    padding:0;
+}
+
+.thumbnail .caption-full{
+    padding:9px;
+}
